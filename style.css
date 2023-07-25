@@ -199,7 +199,6 @@ footer{
     flex-direction: column;
     height: 120vh;
     overflow: hidden;
-    z-index: -1;
     background: url('https://static.spotapps.co/web/americanalasvegas--com/custom/reviews_back.jpg') no-repeat center center fixed;
 }
 .title{
@@ -459,7 +458,7 @@ navbar{
     height: 12vh;
     position: fixed;
     background-color: white;
-    z-index: 1;
+    z-index: 100;
     opacity: 100%;
 }
 navbar > a{
