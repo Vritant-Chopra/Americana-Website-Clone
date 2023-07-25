@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Americana Restaurant - Las Vegas, NV</title>
+    <link rel="stylesheet" href="cdn.jsdelivr.net_npm_swiper@10.0.4_swiper-bundle.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- navbar
+    animation video
+    address 
+    animation info
+    carousel
+    form 
+    animated menu
+    Review carousel 
+    newsletter
+    footer -->
+    <div class="home-cont">
+        <navbar>
+            <a href="#">
+                <img src="https://static.spotapps.co/web/americanalasvegas--com/custom/logo.png" class="home-img">
+            </a>
+            <ul class="home-list">
+                <li>MENU</li>
+                <li>DRINKS</li>
+                <li>CATERING</li>
+                <li>EVENTS</li>
+                <li>PARTIES</li>
+                <li>RESERVE</li>
+                <li>JOBS</li>
+            </ul>
+            <icon class="home-icon">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-yelp"></i>
+            </icon>
+        </navbar>
+        <video autoplay="autoplay" id="coverVideo" loop="loop" muted="muted" playsinline="playsinline"
+            poster="https://static.spotapps.co/web/americanalasvegas--com/custom/video_poster.jpg">
+            <source
+                src="https://static.spotapps.co/website_videos/Americana_Website_Intro_EditedVideo_01142022_Vimeo720p30.m4v"
+                type="video/mp4">
+        </video>
+        <div class="address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>2620 Regatta Drive
+                Las Vegas, NV
+                89128</p>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <div class="one active">
+                <img src="01.webp">
+            </div>
+            <div class="one">
+                <img src="img/02.webp">
+            </div>
+            <div class="one">
+                <img src="img/03.webp">
+            </div>
+            <div class="one">
+                <img src="img/04.webp">
+            </div>
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+
+        </div>
+    </div>
+    <div class="reservation">
+        <div class="first">
+            <div class="title">RESERVATIONS</div>
+            <div id="res-p">Call us at <span id="res-con">(702)-331-5565</span> or book a table through Open Table
+                reservations:</div>
+        </div>
+        <div class="form">
+            <select name="people" id="people">
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+                <option value="6">6 People</option>
+                <option value="7">7 People</option>
+                <option value="8">8 People</option>
+                <option value="9">9 People</option>
+                <option value="10">10 People</option>
+                <option value="11">11 People</option>
+                <option value="12">12 People</option>
+                <option value="13">13 People</option>
+                <option value="14">14 People</option>
+                <option value="15">15 People</option>
+                <option value="16">16 People</option>
+                <option value="17">17 People</option>
+                <option value="18">18 People</option>
+                <option value="19">19 People</option>
+                <option value="20">20 People</option>
+            </select>
+            <input type="date" id="res">
+            <input type="time" name="11:21" id="res-time">
+            <input type="button" value="Find a Table" id="res-btn">
+        </div>
+    </div>
+    <div class="ani-menu">
+        <img class="span" src="img/1.jpeg">
+        <img src="img/2.jpeg" class="no-span">
+        <img src="img/3.jpeg" class="no-span">
+        <img src="img/4.jpeg" class="no-span">
+        <img src="img/5.jpeg" class="no-span">
+        <img src="img/6.jpeg" class="no-span">
+        <img src="img/7.jpeg" class="no-span">
+        <img class="span" src="img/8.jpeg">
+        <img src="img/9.jpeg" class="no-span">
+        <img src="img/10.jpeg" class="no-span">
+        <img src="img/11.jpeg" class="no-span">
+        <img src="img/12.jpeg" class="no-span">
+        <img src="img/13.jpeg" class="no-span">
+        <img src="img/14.jpeg" class="no-span">
+    </div>
+    <!-- <div class="review mySwiper">
+        <div class="title">REVIEWS</div>
+        <div class="rev-content swiper-wrapper">
+            <div class="slide swiper-slide">
+                <p class="shirshak">Review by - Yelp</p>
+                <p class="name">Nicole T:
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                </p>
+                <p class="content">
+                    <i class="fa-solid fa-quote-left"></i>
+                <p class="content-p">Absolutely delicious food! Great service! Great atmosphere. Sat inside with a
+                    beautiful water view! I recommend going first thing when they open. It wasn't too crowded despite
+                    the lunchtime busyness. A great way to celebrate my birthday early! I WILL BE COMING BACK!</p>
+                <i class="fa-solid fa-quote-right"></i>
+                </p>
+            </div>
+            <div class="slide swiper-slide">
+                <p class="shirshak">Review by - Yelp</p>
+                <p class="name">Jane C:
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                </p>
+                <p class="content">
+                    <i class="fa-solid fa-quote-left"></i>
+                <p class="content-p">If you're looking for a fine dining with superb customer service... this place is
+                    the gem! Been here last night, and everything is absolutely amazing. Our server is the utmost
+                    attentive and accommodating waiter I have encountered for the longest time...</p>
+                <i class="fa-solid fa-quote-right"></i>
+                </p>
+            </div>
+            <div class="slide swiper-slide">
+                <p class="shirshak">Review by - Yelp</p>
+                <p class="name">Karina K:
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                </p>
+                <p class="content">
+                    <i class="fa-solid fa-quote-left"></i>
+                <p class="content-p">Wow this is a restaurant I plan on going to a thousand times over. Located in the
+                    beautiful desire shores, this was a fabulous dining experience. The seating was better than I
+                    expected, and out of all the restaurants in desert shores, this indoor dining seating gives you the
+                    best view of the lake.</p>
+                <i class="fa-solid fa-quote-right"></i>
+                </p>
+            </div>
+            <div class="slide swiper-slide">
+                <p class="shirshak">Review by - Yelp</p>
+                <p class="name">Karen S:
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                </p>
+                <p class="content">
+                    <i class="fa-solid fa-quote-left"></i>
+                <p class="content-p">Went for their Sunday brunch and my party and I could not have been happier . They
+                    offer bottomless mimosas , bloody Mary's , and palomas ( tequila and grapefruit juice ) , which was
+                    nice because they allowed us to switch drinks up when ordering more rounds...</p>
+                <i class="fa-solid fa-quote-right"></i>
+                </p>
+            </div>
+            <div class="slide swiper-slide">
+                <p class="shirshak">Review by - Yelp</p>
+                <p class="name">Yogi C:
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                </p>
+                <p class="content">
+                    <i class="fa-solid fa-quote-left"></i>
+                <p class="content-p">Wonderful and beautiful to have Sunday brunch here! It is by the lake and the
+                    ambient is just so relaxing! Food was excellent! The salad was so fresh and crispy. The dressing was
+                    just mixed to perfect. And the main dish of pasta and salmon was so tender and juicy. </p>
+                <i class="fa-solid fa-quote-right"></i>
+                </p>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div> -->
+    <div class="review swiper mySwiper">
+        <div class="title">REVIEWS</div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide">
+                    <p class="shirshak">Review by - Yelp</p>
+                    <p class="name">Nicole T:
+                        <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </p>
+                    <p class="content">
+                        <i class="fa-solid fa-quote-left"></i>
+                    <p class="content-p">Absolutely delicious food! Great service! Great atmosphere. Sat inside with a
+                        beautiful water view! I recommend going first thing when they open. It wasn't too crowded
+                        despite the lunchtime busyness. A great way to celebrate my birthday early! I WILL BE COMING
+                        BACK!</p>
+                    <i class="fa-solid fa-quote-right"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide">
+                    <p class="shirshak">Review by - Yelp</p>
+                    <p class="name">Jane C:
+                        <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </p>
+                    <p class="content">
+                        <i class="fa-solid fa-quote-left"></i>
+                    <p class="content-p">If you're looking for a fine dining with superb customer service... this place
+                        is the gem! Been here last night, and everything is absolutely amazing. Our server is the utmost
+                        attentive and accommodating waiter I have encountered for the longest time...</p>
+                    <i class="fa-solid fa-quote-right"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide">
+                    <p class="shirshak">Review by - Yelp</p>
+                    <p class="name">Karina K:
+                        <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </p>
+                    <p class="content">
+                        <i class="fa-solid fa-quote-left"></i>
+                    <p class="content-p">Wow this is a restaurant I plan on going to a thousand times over. Located in
+                        the beautiful desire shores, this was a fabulous dining experience. The seating was better than
+                        I expected, and out of all the restaurants in desert shores, this indoor dining seating gives
+                        you the best view of the lake.</p>
+                    <i class="fa-solid fa-quote-right"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide">
+                    <p class="shirshak">Review by - Yelp</p>
+                    <p class="name">Karen S:
+                        <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </p>
+                    <p class="content">
+                        <i class="fa-solid fa-quote-left"></i>
+                    <p class="content-p">Went for their Sunday brunch and my party and I could not have been happier .
+                        They offer bottomless mimosas , bloody Mary's , and palomas ( tequila and grapefruit juice ) ,
+                        which was nice because they allowed us to switch drinks up when ordering more rounds...</p>
+                    <i class="fa-solid fa-quote-right"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide">
+                    <p class="shirshak">Review by - Yelp</p>
+                    <p class="name">Yogi C:
+                        <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </p>
+                    <p class="content">
+                        <i class="fa-solid fa-quote-left"></i>
+                    <p class="content-p">Wonderful and beautiful to have Sunday brunch here! It is by the lake and the
+                        ambient is just so relaxing! Food was excellent! The salad was so fresh and crispy. The dressing
+                        was just mixed to perfect. And the main dish of pasta and salmon was so tender and juicy. </p>
+                    <i class="fa-solid fa-quote-right"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="newsletter">
+        <div class="news-info">
+            <div class="news">
+                <p id="head">NEWSLETTER</p>
+                <p id="update">Stay tuned for updates</p>
+                <p id="message">Sign up for our newsletter & get exclusive offers and invites!</p>
+                <!-- <input type="text"> -->
+                <div class="email">
+                    <input type="text" class="inp" placeholder="Your Email...">
+                    <input type="button" class="submit" value="SUBMIT">
+                </div>
+            </div>
+        </div>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=2620 Regatta Drive Las Vegas, NV 89128&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                <a href="https://connectionsgame.org/">Connections Game</a>
+            </div>
+            <style>
+                .mapouter {
+                    position: relative;
+                    text-align: right;
+                    width: 50%;
+                    height: 65vh;
+                }
+
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    width: 100%;
+                    height: 65vh;
+                }
+
+                .gmap_iframe {
+                    height: 65vh !important;
+                }
+            </style>
+        </div>
+    </div>
+    <footer>
+        <div class="info">
+            <div id="location">
+                <h2>LOCATION</h2>
+                <p>2620 Regatta Drive
+                    Las Vegas, NV
+                    89128</p>
+            </div>
+            <div id="hours">
+                <h2>HOURS</h2>
+                <ul>
+                    <li>Lunch 11:30AM-3:00PM Tuesday-Saturday</li>
+                    <li>Brunch 11:00 AM- 3:00PM Sunday</li>
+                    <li>Dinner Tuesday, Wednesday, Thursday, Sunday, 3:00PM-9:00PM</li>
+                    <li>Dinner Friday & Saturday 3:00PM -9:30PM</li>
+                </ul>
+            </div>
+            <div id="find-us">
+                <h2>FIND US ON...</h2>
+                <div class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-yelp"></i>
+                </div>
+            </div>
+            <div id="contact">
+                <h2>CONTACT US</h2>
+                <p class="contact-no">(702)-331-5565</p>
+            </div>
+        </div>
+        <div class="spot-hopper">
+            <p>Powered By :
+                <span>
+                    <a href="https://www.spothopperapp.com/?_gl=1*7dcdn1*_ga*MTIxOTkyMDg0Ny4xNjg5MDU5OTU4*_ga_VG24VK2VKT*MTY4OTA1OTk1Ny4xLjEuMTY4OTA2MDQ0NS4wLjAuMA..*_ga_31HXNESSJY*MTY4OTA1OTk1OS4xLjEuMTY4OTA2MDQ0NS4wLjAuMA..&_ga=2.23141299.809040458.1689059959-1219920847.1689059958"
+                        target="_blank">
+                        <img class="spothopper-logo" src="img/spothopper-logo.png">
+                    </a>
+                </span>
+            </p>
+            <p>
+                <a class="some-info"
+                    href="https://www.spothopperapp.com/contact-us?contact_reason=demo&_gl=1*uakqsx*_ga*MTIxOTkyMDg0Ny4xNjg5MDU5OTU4*_ga_VG24VK2VKT*MTY4OTA1OTk1Ny4xLjEuMTY4OTA2MDcxNS4wLjAuMA..*_ga_31HXNESSJY*MTY4OTA1OTk1OS4xLjEuMTY4OTA2MDcxNS4wLjAuMA..&_ga=2.265771014.809040458.1689059959-1219920847.1689059958"
+                    target="_blank">
+                    Website design, Social Media marketing and Email marketing provided by SpotHopper.
+                </a>
+            </p>
+        </div>
+        <div class="closing">
+            <p>We strive to make our website accessible to everybody. <a
+                    href="https://americanalasvegas.com/accessibility-page-01">Learn More.</a></p>
+        </div>
+    </footer>
+
+    <script src="cdn.jsdelivr.net_npm_swiper@10.0.4_swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/aeec761082.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
